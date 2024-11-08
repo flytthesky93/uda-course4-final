@@ -23,6 +23,6 @@ services:
   frontend:
     build:
       context: ./udagram-frontend
-    image: udagram-frontend:local
+    image: udagram-frontend
     ports:
       - "8100:80"
