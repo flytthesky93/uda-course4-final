@@ -1,0 +1,10 @@
+.env
+/udagram-feed-api/node-modules/
+/udagram-feed-api/.aws/
+/udagram-feed-api/.env
+
+/udagram-frontend/.env
+/udagram-frontend/node-modules/
+
+/udagram-user-api/.env
+/udagram-user-api/node-modules/
