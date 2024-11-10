@@ -10,14 +10,12 @@ install:
   - echo "nothing needs to be installed"
 
 # Scripts to be run such as tests
-before_install:
-  - curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-  - chmod +x /usr/local/bin/docker-compose
-
+before_script:
+  - echo "no tests"
 
 script:
   - docker --version # print the version for logging
-  - docker compose build
+  - docker-compose build
   - docker tag udagram-frontend flythesky93/udagram-frontend:latest
   - docker tag reverseproxy flythesky93/reverseproxy:latest
   - docker tag udagram-feed-api flythesky93/udagram-feed-api:latest
