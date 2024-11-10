@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker compose build .
+  - docker compose build
   - docker tag udagram-frontend flythesky93/udagram-frontend:latest
   - docker tag reverseproxy flythesky93/reverseproxy:latest
   - docker tag udagram-feed-api flythesky93/udagram-feed-api:latest
